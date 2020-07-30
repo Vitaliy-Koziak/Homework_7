@@ -8,9 +8,12 @@ def is_prime(number):
         else:
             return False
 
-number = int(input("Введіть число від 0 до 1000: "))
-while number < 0 or number > 1000:
-    print("Ваше число не задовільняє межі, введіть інше: ")
-    number = int(input())
+def main():
+    number = int(input("Введіть число від 0 до 1000: "))
+    while number < 0 or number > 1000:
+        print("Ваше число не задовільняє межі, введіть інше: ")
+        number = int(input())
+    print(is_prime(number))
 
-print(is_prime(number))
+if __name__ == "__main__":
+    main()
